@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no">
+    
+    <!--Add to homescreen And color theme-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-title" content="JKitchen">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <!-- Theme color for chrome, firefox and opera-->
+    <meta name="theme-color" content="#27a542">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#27a542">
+
+    <title>JKitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/multislide.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+    
+  
+</head>
+<body id="rating">
+      <header>
+
+          <div id="main-nav">
+
+			<nav class="navbar" style="margin-bottom: 0;">
+				
+                <div class="container">
+					<div class="navbar-header">
+                        <button onclick="goBack()" id="back"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+						<div class="navbar-brand text-center">Rating</div>
+						<button width="30px" type="button" class="navbar-toggle" id="bag">
+							&nbsp;
+						</button>
+					</div>
+
+				</div>
+			</nav>
+
+		</div>
+      </header>
+       
+    
+    
+     <div class="container-fluid">
+                 <div class="row" id="history">
+                     <div class="card">
+                          <ul class="nav nav-tabs">
+                               <li class="active"><a data-toggle="tab" href="#tab1">CATERING</a></li>
+                               <li><a data-toggle="tab" href="#tab2">READY TO EAT</a></li>
+                          </ul>
+                          <div class="tab-content">
+                              <div id="tab1" class="tab-pane fade in active">
+                                  <table class="table">
+                                      <tr>
+                                          <th>Nama Menu</th>
+                                          <th>Rating Anda</th>
+                                      </tr>
+                                      <tr>
+                                          <td>Bento</td>
+                                          <td>
+                                              <div class="rating">
+                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                </div>
+                                          </td>
+                                      </tr> 
+                                  </table>
+                              </div>
+                              <div id="tab2" class="tab-pane fade">
+                                  <table class="table">
+                                      <tr>
+                                          <th>Nama Menu</th>
+                                          <th>Rating Anda</th>
+                                      </tr>
+                                      <tr>
+                                          <td>Tahu Isi Bakso</td>
+                                          <td>
+                                              <div class="rating">
+                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                </div>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>Tempe Mendoan</td>
+                                          <td>
+                                              <div class="rating">
+                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                </div>
+                                          </td>
+                                      </tr> 
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                 </div>
+                  
+        
+    </div>
+        
+      
+    
+    
+</body>
+</html>

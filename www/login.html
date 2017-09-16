@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no">
+    
+    <!--Add to homescreen And color theme-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-title" content="JKitchen">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <!-- Theme color for chrome, firefox and opera-->
+    <meta name="theme-color" content="#27a542">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#27a542">
+
+    <title>JKitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    
+    <script type="text/javascript">
+         $(document).ready(function () {
+             $("#sidebar").niceScroll({
+                 cursorcolor: '#27a542',
+                 cursorwidth: 4,
+                 cursorborder: 'none'
+             });
+
+             $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').fadeOut();
+             });
+
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').addClass('active');
+                 $('.overlay').fadeIn();
+                 $('.collapse.in').toggleClass('in');
+                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+             });
+         });
+     </script>
+    
+  
+</head>
+<body id="login">
+     
+     
+     <div class="overlay"></div>
+         <nav id="sidebar">
+            <div id="main-nav">
+                <div id="dismiss">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                
+                
+                    <ul class="nav navbar-nav navbar-left" style="background-color: whitesmoke;">
+                        <li><h3>Hello, <span>Andri Winanda</span></h3></li>
+                        <li><img width="30px" src="img/Shopping-bag-black.png" alt=""> <span>0</span> <img width="30px" src="img/45271-200.png" alt=""> <span>0</span></li>
+                    </ul>
+                
+
+                
+                <ul class="nav navbar-nav navbar-left" style="background-color: gainsboro;">
+                    <li><a href="index.html">Catering</a></li>
+                    <li><a href="ready-to-eat.html">Ready To Eat</a></li>
+                    <li><a href="snack.html">Snack Box</a></li>
+                    <li><a href="cara-pesan.html">Cara Pesan</a></li>
+                    <li><a href="track.html">Cek Pesanan</a></li>
+                    <li><a href="profil.html">Akun Saya</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="contact.html">Hubungi Kami</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-left" style="background-color: whitesmoke;">
+                    <li><p>Copyright &copy; 2017 JKitchen.</p></li>
+                </ul>
+          </div>
+        </nav>
+     
+      <header>
+
+          <div id="main-nav">
+          
+			<nav class="navbar">
+               <div class="container">
+                        <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse"  id="sidebarCollapse">
+                            <span class="sr-only">Toggle</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand text-center">Amsuk</div>
+						<button type="button" class="navbar-toggle" id="bag" onclick="location='checkout.html'">
+							<img width="30px" src="img/Shopping-bag-inv.png" alt="">
+						</button>
+				    </div>
+              </nav>
+
+		</div>
+      </header>
+       
+    
+    
+     <div class="container-fluid" id="login">
+         <form action="#">
+            <div class="form-group">
+                <label for="email" class="required">Email</label>
+                <input type="email" name="email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password" class="required">Password</label>
+                <input type="password" name="password" id="password" class="form-control">
+            </div>
+            
+            <button formaction="index.html" type="submit" class="btn">Masuk</button>
+            <a href="forgot.html">Lupa Password?</a>
+        </form>
+        <p>Belum punya akun? <a href="signup.html">Daftar Sekarang</a></p>
+        <hr>
+        <div class="row" id="social">
+            <div class="col-xs-6">
+                <button type="button" class="btn facebook" onclick="#">
+                    <span><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span>
+                </button>
+            </div>
+            <div class="col-xs-6">
+                <button type="button" class="btn gmail" onclick="#">
+                    <span><i class="fa fa-google-plus" aria-hidden="true"></i> Google+</span>
+                </button>
+            </div>
+            
+        </div>
+        
+    </div>
+        
+      
+    
+    
+</body>
+</html>
